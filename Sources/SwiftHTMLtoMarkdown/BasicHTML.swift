@@ -19,8 +19,17 @@ public class BasicHTML: HTML {
             guard let last = node.nodeName().last else {
                 return
             }
+			
             guard let level = Int(String(last)) else {
                 return
+            }
+
+            if markdown.length > 0 && suffix(1) != "\n" {
+                markdown.append("\n")
+            }
+
+            if markdown.length > 0 && suffix(2) != "\n\n" {
+                markdown.append("\n")
             }
             
             for _ in 0..<level {
