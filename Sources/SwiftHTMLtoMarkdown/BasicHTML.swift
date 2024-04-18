@@ -1,5 +1,6 @@
 import SwiftSoup
 
+@available(iOS 16.0, *)
 public class BasicHTML: HTML {
     public var rawHTML: String
     public var document: Document?
