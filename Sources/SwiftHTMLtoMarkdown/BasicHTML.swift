@@ -24,11 +24,11 @@ public class BasicHTML: HTML {
                 return
             }
 
-            if markdown.length > 0 && suffix(1) != "\n" {
+            if markdown.count > 0 && suffix(1) != "\n" {
                 markdown.append("\n")
             }
 
-            if markdown.length > 0 && suffix(2) != "\n\n" {
+            if markdown.count > 0 && suffix(2) != "\n\n" {
                 markdown.append("\n")
             }
             
